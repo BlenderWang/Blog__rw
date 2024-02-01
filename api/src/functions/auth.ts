@@ -122,15 +122,14 @@ export const handler = async (
       salt,
       userAttributes: _userAttributes,
     }) => {
-      return
-      /* db.user.create({
+      return db.user.create({
         data: {
           email: username,
           hashedPassword: hashedPassword,
           salt: salt,
           // name: userAttributes.name
         },
-      }) */ false
+      })
     },
 
     // Include any format checks for password here. Return `true` if the
